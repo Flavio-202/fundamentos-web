@@ -6,17 +6,19 @@
 		<meta name="description" content="Projeto Portfólio">
 		<meta name="author" content="Flavio Aguilar">
 		<meta name="keywords" content="HTML, CSS, JavaScript">
-		<title>Meu Perfil</title>
+		<link rel="stylesheet" href="assets/css/style.css">
+		<title>Contato</title>
 	</head>
 	<body>
 		<!-- Cabeçalho da Página (header) -->
 		<header>
 			<!-- Div Conteudo do Cabeçalho -->
-			<div id="header_content">
+			<div id="header_content" class="flex">
+
 				<!-- Titulo do Cabeçalho -->
 				<div id="titulo">
-					<!-- Seu nome -->
-					<h1>Preencha este formulário:</h1>
+				
+					<h1>Preencha o formulário:</h1>
 				</div>
 
 				<!-- Conteudo do Menu da Página (header) -->
@@ -28,6 +30,9 @@
 							<li>
 								<a href="index.html"> Home </a>
 							</li>
+							<li>
+								<a href="contato.html">Contato</a>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -35,16 +40,17 @@
 		</header>
 
 		<!-- Seção Principal da Página (main) -->
+		 <div id="altura-min">
 		<main>
 			
 			<!-- Seção Formulário de Contato e Redes Sociais -->
-			<section id="contact">
+			<div id="contact" class="flex">
 				
 				<!-- Seção do Formulário-->
-				<form action="#" method="submit" id="formulario">
+				<form action="#" method="submit">
 					<label for="nome">Nome: </label>
 					<input
-						id="name"
+						id="nome"
 						type="text"
 						name="name"
 						placeholder="Digite seu nome"
@@ -77,45 +83,56 @@
 						id="message"
 						name="message"
 						placeholder="Digite sua mensagem"
-						required
-					>
-					</textarea>
+					></textarea>
 
 					<button type="submit">Enviar</button>
 				</form>
 
 				<!-- Seção do Google Maps -->
-				<article id="mapa">
-                    <h2>Endereço</h2>
+
+				<section id="mapa" class="flex_start">
+
+					<div id="endereco">
                     <p>Av. Cupecê, 4.585 - Cidade Ademar </p>
-                    <p>São Paulo - SP, 04365-001</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.05718191936!2d-46.64273379999999!3d-23.673913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4530408665d3%3A0x10e3f53a5c829439!2sRold%C3%A3o%20Atacadista!5e0!3m2!1spt-BR!2sbr!4v1752938839392!5m2!1spt-BR!2sbr" 
-                    width="600" 
-                    height="450" 
-                    style="border:0;" 
+                    <p>São Paulo - SP</p>
+					</div>
+
+                    <iframe 
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.05718191936!2d-46.64273379999999!3d-23.673913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4530408665d3%3A0x10e3f53a5c829439!2sRold%C3%A3o%20Atacadista!5e0!3m2!1spt-BR!2sbr!4v1752938839392!5m2!1spt-BR!2sbr" 
+                    width="400" 
+                    height="250" 
+					frameborder="0"
+                    style="border: 0" 
                     allowfullscreen="" 
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
+					aria-hidden="false"
+					tabindex="0"
+					id="mapa"
                     >
                     </iframe>
-				</article>
-			</section>
+				</section>
+			</div>
 		</main>
+		</div>
 
 		<!-- Rodapé da Página (footer) -->
-		<footer>
+		<footer class="flex">
+
+			<h3>Minhas redes sociais e portfólio:</h3>
+
 			<!-- Seção de Contato - Redes Sociais -->
 			<section id="redes_sociais">
-                <h2>Minhas redes sociais e portfólio:</h2>
 				<a href="https://www.linkedin.com/in/flavio-aguilar-477484237/" target="_blank">
-					<img src="assets/img/linkedin.svg" alt="LinkedIn" />
+					<img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon" />
 				</a>
+				
 				<a href="https://github.com/Flavio-202" target="_blank">
-					<img src="assets/img/github.svg" alt="Github" />
+					<img src="assets/img/github.svg" alt="Github" class="social_icon" />
 				</a>
+
 			</section>
 
 			<h3>Feito com 💕 por Flavio Aguilar - 2025</h3>
+
 		</footer>
 	</body>
 </html>

@@ -8,86 +8,100 @@
     <meta name="description" content="Projeto Portfólio">
     <meta name="author" content="Flavio Aguilar">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <link rel="icon" type= "image/svg" href="" />
+    <link rel="icon" type= "image/svg" href="a" />
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Meu perfil</title>
 </head>
 
 <body> 
+
     <!--Header é o cabeçalho-->
 <header>
 
-<div id="Header_content"> 
+<div id="header_content" class="flex"> 
 
 <div id="titulo">   
-    <h1>Olá, seja bem vindo no meu site!</h1>
-    <h2>Entre em contato</h2>
+    <h1> Olá, seja bem vindo no meu site!</h1>
 </div>
 
 <div id="menu">
     <nav>
-        <ul>
+        <ul id="menu">
             <li><a href="contato.html" target="_blank"> Contato</a></li>
-            <li> <a href="porfolio.html" target="_blank"> Meus projetos</a></li>
+            <li> <a href="porfolio.html" target="_blank"> Portfólio</a></li>
         </ul>
     </nav>
 </div>
-
 </div>
 </header>
 
 
     <!--main é o conteúdo principal-->
 <main> 
-<section id="about">
-    <h2>Sobre mim:</h2>
 
-    <div id="conteudo">
-        <img height="200" src="assets/img/minha foto.jpeg" alt="Minha foto">
+     <section id="about" class="flex_start">
+
+            <h2>Sobre mim</h2>
+
+<div id="conteudo" class="flex">
+
+        <img 
+        src="assets/img/minha foto.jpeg" 
+        alt="Minha foto" 
+        class="img_profile"/>
+
+        <article id="sobre_texto">
+            <p>
+                Meu nome é Flavio, sou formado em Gestão Financeira e apaixonado por tecnologia. Tenho experiência com atendimento ao cliente, forte capacidade analítica e bom domínio do Pacote Office. Atualmente, estou cursando o bootcamp intensivo da Generation Brasil, uma organização internacional focada em empregabilidade, onde estou me especializando como Desenvolvedor Web Full Stack.
+            </p>
+            <p>
+                No programa, venho desenvolvendo competências técnicas (HTML, CSS, JavaScript, Java, Spring Boot, React) e comportamentais (trabalho em equipe, comunicação, lógica de programação e metodologias ágeis como Scrum). Busco uma oportunidade na área de tecnologia onde eu possa aplicar meus conhecimentos, crescer profissionalmente e contribuir com soluções eficientes e centradas no usuário. Possuo inglês em nível intermediário e estou comprometido com a aprendizagem contínua e a geração de valor por meio da tecnologia.
+            </p>
+        </article>
+
     </div>
-
-    <article id="sobre_mim">
-        <p>
-            Meu nome é Flavio, sou formado em Gestão Financeira e apaixonado por tecnologia, tenho experiência com atendimento ao cliente e bom domínio do Pacote Office. Atualmente, participo do bootcamp da Generation Brasil, onde estou me especializando como Desenvolvedor Web Full Stack. Tenho interesse em crescer na área de tecnologia, unindo minha bagagem analítica e foco em atendimento à lógica de programação e ao desenvolvimento de soluções web. Possuo inglês intermediário e estou em busca de uma oportunidade para aplicar meus conhecimentos, aprender continuamente e gerar valor por meio da tecnologia. 
-        </p>
-
-    </article>
 </section>
 
-<section id="video">
+
+<section id="video" class="flex_start">
+
     <h2> Meu video favorito: </h2>
 
-    <div>
-        <iframe 
-   width="560" 
-   height="315" 
-   src="https://www.youtube.com/embed/Q8UaqJxcvFM?si=nFXtgH2CbntSNnFj&amp;start=5" title="YouTube video player" 
-   frameborder="0" 
-   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div> 
+    <div id="youtube" class="flex">
 
+    <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/Q8UaqJxcvFM?si=nFXtgH2CbntSNnFj&amp;start=5" title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+    >
+</iframe>
+
+    </div> 
 </section>
 </main>
 
 <!--footer é o rodapé-->
-<footer>
+
+
+
+<footer class="flex">
+    <h3>Minhas redes sociais:</h3>
+
     <section id="redes_sociais">
-
-        <h2>Minhas redes sociais:</h2>
-        <h6>Clique em cima do logo para abrir a pagina!</h6>
-
         <a href="https://www.linkedin.com/in/flavio-aguilar-477484237/" target="_blank">
-        <img src="assets/img/linkedin.svg" alt="LinkedIn">
+        <img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon">
         </a>
 
         <a href="https://github.com/Flavio-202" target="_blank">
-            <img src="assets/img/github.svg" alt="github">
+            <img src="assets/img/github.svg" alt="github" class="social_icon">
         </a>
+
     </section>
 
-    <h3>
-        Feito com ❤️ por Flavio Aguilar - 2025
-    </h3>
-    
+    <h3>Feito com ❤️ por Flavio Aguilar - 2025</h3>
+
 </footer>
 
 </body>
